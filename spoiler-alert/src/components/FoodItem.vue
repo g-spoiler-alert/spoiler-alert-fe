@@ -53,7 +53,7 @@
     },
     methods: {
       deleteFood(deletedFood) {
-        const apiUrl = `https://g-spoiler-alert.herokuapp.com/api/v1/pantry/delete/${deletedFood.id}`
+        const apiUrl = `https://pacific-caverns-33400.herokuapp.com/api/v1/pantry/delete/${deletedFood.id}`
         fetch(apiUrl, {
             method: "DELETE",
             body: JSON.stringify(deletedFood),
@@ -67,7 +67,7 @@
           .then(console.log('deleted'))
       },
       updateFood(updateFood) {
-        const updateURL = `https://g-spoiler-alert.herokuapp.com/api/v1/pantry/item/${updateFood.id}`
+        const updateURL = `https://pacific-caverns-33400.herokuapp.com/api/v1/pantry/item/${updateFood.id}`
         fetch(updateURL, {
             method: "PUT",
             headers: new Headers({

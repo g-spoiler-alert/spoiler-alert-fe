@@ -99,7 +99,7 @@ export default {
     onSubmit() {
       const data = this.form
       data.user_id = this.userId
-      fetch('https://g-spoiler-alert.herokuapp.com/api/v1/pantry/newitem', {
+      fetch('https://pacific-caverns-33400.herokuapp.com/api/v1/pantry/newitem', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

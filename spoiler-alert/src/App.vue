@@ -32,7 +32,7 @@ export default {
       ;
     },
     findUserId(username) {
-      const apiUrl = `https://g-spoiler-alert.herokuapp.com/api/v1/users/${username}`;
+      const apiUrl = `https://pacific-caverns-33400.herokuapp.com/api/v1/users/${username}`;
       fetch(apiUrl)
         .then(Response => Response.json())
         .then(Response => {
