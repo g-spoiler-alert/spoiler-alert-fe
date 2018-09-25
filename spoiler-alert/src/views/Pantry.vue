@@ -43,12 +43,7 @@ export default {
   data() {
     return {
     showPantry: true,
-    foods: [],
-    meat: this.getMeat,
-    produce: 1,
-    dairy: 2,
-    grain: 1,
-    other: 2
+    foods: []
     }
   },
   methods: {
