@@ -33,7 +33,7 @@
             type="date"
             required-placeholder="Expiration date"/>
         </b-form-group>
-        <b-button 
+        <b-button
           variant="success"
           @click="updateFood(food)" >Submit</b-button>
       </div>
@@ -43,16 +43,7 @@
 
 <script>
   export default {
-    props: {
-      food: {
-        type: Object,
-        default: Object
-      },
-      getFood: {
-        type: Function,
-        default: Function
-      }
-    },
+    props: ['food', 'getFood'],
     data() {
       return {
         newExpDate: 'date',

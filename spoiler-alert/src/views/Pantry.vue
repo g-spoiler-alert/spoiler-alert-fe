@@ -17,26 +17,17 @@
         :foods="foods"
         :get-food="getFood"/>
     </article>
-    <food-chart
-      :user-food="foods.items"
-      :meat="meat"
-      :produce="produce"
-      :dairy="dairy"
-      :grain="grain"
-      :other="other"/>
   </div>
 </template>
 
 <script>
 import Form from '@/components/Form'
 import PantryList from '@/components/PantryList'
-import FoodChart from '@/components/FoodTypeChart'
 
 export default {
   components: {
     Form,
-    PantryList,
-    FoodChart
+    PantryList
   },
   props: {
      userId: {
@@ -60,40 +51,12 @@ export default {
     other: 2
     }
   },
-  computed: {
-    getMeat(){
-      return this.foods[0].items.filter( item => {
-        item.type === 'Meat'
-      })
-    },
-    getProduce(){
-      return this.foods.items.filter( item => {
-        item.type === 'Produce'
-      })
-    },
-    getDairy(){
-      return this.foods.items.filter( item => {
-        item.type === 'Dairy'
-      })
-    },
-    getGrain(){
-      return this.foods.items.filter( item => {
-        item.type === 'Grain'
-      })
-    },
-    getOther(){
-      return this.foods.items.filter( item => {
-        item.type === 'Other'
-      })
-    }
-  },
   methods: {
     getFood() {
       const apiUrl = `https://g-spoiler-alert.herokuapp.com/api/v1/pantry/${this.userId}`
       fetch(apiUrl)
       .then(Response => Response.json())
       .then(Response => {
-        console.log(Response)
         this.foods = Response
       })
     }
