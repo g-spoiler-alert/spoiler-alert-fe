@@ -111,6 +111,7 @@ export default {
       .then(res => {
         this.getFood()
       })
+
       .then(this.showForm = false)
     },
   },
