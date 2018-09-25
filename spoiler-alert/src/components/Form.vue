@@ -81,11 +81,9 @@ export default {
   },
   data() {
     return {
-      id: this.userId,
       showForm: false,
       showImage: false,
       form: {
-        user_id: this.userId,
         name: '',
         type: '',
         expDate: null
@@ -100,6 +98,7 @@ export default {
   methods: {
     onSubmit() {
       const data = this.form
+      data.user_id = this.userId
       fetch('https://g-spoiler-alert.herokuapp.com/api/v1/pantry/newitem', {
         method: 'POST',
         headers: {
