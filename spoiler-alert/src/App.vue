@@ -38,10 +38,9 @@ export default {
         .then(Response => {
           console.log(Response.user[0])
           this.userId =  Response.user[0].id
-          // this.userInput = Response.user.username
         })
         .then(this.$router.push('pantry'))
-        
+
     },
   }
 }
@@ -53,11 +52,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /* color: #2c3e50; */
   margin-top: 60px;
   display: flex;
   flex-direction: column;
-  /* min-height: 87vh; */
   min-height:100%;
   position:relative;
 }

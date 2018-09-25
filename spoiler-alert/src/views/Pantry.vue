@@ -83,9 +83,5 @@ export default {
   .welcome {
     margin-top: 14.5%;
   }
-
-  #chart-container {
-    width: inherit
-  }
 }
 </style>
