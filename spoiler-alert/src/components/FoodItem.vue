@@ -71,7 +71,6 @@
             })
           })
           .then(data => {
-            console.log(data);
             this.getFood();
           })
           .then(console.log('deleted'))
