@@ -38,7 +38,7 @@
             id="date"
             label="Expiration Date:"
             label-for="date">
-            <b-form-input 
+            <b-form-input
               id="date"
               v-model="form.expDate"
               type="date"
