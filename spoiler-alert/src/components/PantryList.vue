@@ -15,16 +15,7 @@ export default {
   components: {
       FoodItem
   },
-  props: {
-    foods: {
-      type: Object,
-      required: true
-    },
-    getFood: {
-      type: Function,
-      required: true
-    }
-  }
+  props: ['foods', 'getFood'],
 }
 </script>
 
