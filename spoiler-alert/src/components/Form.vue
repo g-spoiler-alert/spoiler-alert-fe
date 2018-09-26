@@ -69,16 +69,7 @@
 
 <script>
 export default {
-  props: {
-    getFood: {
-      type: Function,
-      required: true
-    },
-    userId: {
-      type: Number,
-      required: true
-    }
-  },
+  props: ['getFood', 'userId'],
   data() {
     return {
       showForm: false,

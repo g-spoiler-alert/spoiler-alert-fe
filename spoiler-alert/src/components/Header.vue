@@ -15,7 +15,6 @@
             type="text"
             placeholder="User Name"/>
           <b-button
-            
             type="submit"
             size="sm"
             class="my-2 my-sm-0"
@@ -30,12 +29,7 @@
 <script>
 
 export default {
-  props: {
-    getUser: {
-      type: Function,
-      required: true
-    }
-  },
+  props: ['getUser'],
   data() {
     return {
       userName: '',

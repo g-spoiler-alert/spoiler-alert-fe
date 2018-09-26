@@ -29,17 +29,7 @@ export default {
     Form,
     PantryList
   },
-  props: {
-     userId: {
-      type: Number,
-      required: true
-    },
-    userName: {
-      type: String,
-      default: String,
-      required: true
-    }
-  },
+  props: ['userId', 'userName'],
   data() {
     return {
     showPantry: true,
@@ -48,7 +38,7 @@ export default {
   },
   methods: {
     getFood() {
-      const apiUrl = `https://g-spoiler-alert.herokuapp.com/api/v1/pantry/${this.userId}`
+      const apiUrl = `https://pacific-caverns-33400.herokuapp.com/api/v1/pantry/${this.userId}`
       fetch(apiUrl)
       .then(Response => Response.json())
       .then(Response => {
