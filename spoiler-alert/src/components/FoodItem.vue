@@ -48,6 +48,8 @@
       return {
         newExpDate: 'date',
         showDates: false,
+        foodType: this.food.type,
+        imageSource: '',
         foodImg: require(`../assets/${this.food.type}.jpg`),
       }
     },
@@ -102,5 +104,4 @@
     height: 120px;
     width: 240px;
   }
-
 </style>
