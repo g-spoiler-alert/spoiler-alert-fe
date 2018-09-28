@@ -4,7 +4,7 @@
 
 ## Deployed Link
 
-> (https://spoiler-alert-6e53f.firebaseapp.com/?#/)
+> https://spoiler-alert-6e53f.firebaseapp.com/?#/
 
 ## Build Setup
 
