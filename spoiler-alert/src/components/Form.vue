@@ -12,7 +12,7 @@
       <form v-if="showForm">
         <b-form
           v-if="show"
-          @submit="onSubmit">
+          @submit="getImgUrl">
           <b-form-group
             id="foodName"
             label="Food Name:"
@@ -87,9 +87,30 @@ export default {
     }
   },
   methods: {
-    onSubmit() {
+    getImgUrl() {
+      let foodType = this.form.type
+      switch(foodType) {
+        case 'Meat':
+          this.imgUrl = "http://gdurl.com/kiqv";
+          break;
+        case 'Produce':
+          this.imgUrl = "http://gdurl.com/d9iR";
+          break;
+        case 'Grain':
+          this.imgUrl = "http://gdurl.com/0u50";
+          break;
+        case 'Dairy':
+          this.imgUrl = "http://gdurl.com/MX62";
+          break;
+        default:
+          this.imgUrl = "http://gdurl.com/6adX";
+      }
+      this.newFood()
+    },
+    newFood() {
       const data = this.form
       data.user_id = this.userId
+      data.imgUrl = this.imgUrl
       fetch('https://pacific-caverns-33400.herokuapp.com/api/v1/pantry/newitem', {
         method: 'POST',
         headers: {

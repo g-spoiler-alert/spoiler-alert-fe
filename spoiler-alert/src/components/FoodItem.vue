@@ -7,8 +7,8 @@
       style="max-width: 20rem;"
       class="mb-2">
       <img
-        :src="foodImg"
-        alt="image of food type">
+        :src="this.food.imgUrl"
+        :alt="this.food.type">
       <p class="card-text">
         {{ food.expDate | moment("dddd, MMMM Do") }}
       </p>
@@ -49,8 +49,8 @@
         newExpDate: 'date',
         showDates: false,
         foodType: this.food.type,
-        imageSource: '',
-        foodImg: require(`../assets/${this.food.type}.jpg`),
+        // imageSource: '',
+        // foodImg: require(`../assets/${this.food.type}.jpg`),
       }
     },
     methods: {
