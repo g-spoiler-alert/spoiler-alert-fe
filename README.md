@@ -4,6 +4,10 @@ So much food in the world goes to waste from consumers forgetting when it will e
 
 ---
 
+## Deployed Link:
+
+[Spoiler Alert!](https://spoiler-alert-6e53f.firebaseapp.com/?#/)
+
 ![Spoiler Alert! Screenshot](./Spoiler-Alert-Screenshot.png)
 
 ---
