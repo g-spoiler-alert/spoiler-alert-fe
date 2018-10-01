@@ -8,3 +8,18 @@ So much food in the world goes to waste from consumers forgetting when it will e
 
 ![Spoiler Alert! Screenshot](./Spoiler-Alert-Screenshot.png)
 
+---
+
+## Tech/Framework Used
+
+---
+
+<b>Built with</b>
+- [Vue.js](https://vuejs.org/)
+- [Bootstrap + Vue](https://bootstrap-vue.js.org/)
+- [Express/Node.js](http://expressjs.com/)
+- [Knex.js](https://knexjs.org/)
+- [PostgresSQL](https://www.postgresql.org/)
+
+---
+
