@@ -2,6 +2,10 @@
 
 > A Vue.js project
 
+## Deployed Link
+
+> https://spoiler-alert-6e53f.firebaseapp.com/?#/
+
 ## Build Setup
 
 ``` bash
