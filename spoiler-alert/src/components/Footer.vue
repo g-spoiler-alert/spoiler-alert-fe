@@ -5,6 +5,7 @@
     variant="light"
     fixed="top">
     <small>2018. Spoiler Alert Inc. TH, KR, KJ, GS, JR. Under MIT License.</small>
+    <small><a href="https://github.com/g-spoiler-alert/spoiler-alert-fe" target="_blank">Github Repo</a></small>
   </footer>
 </template>
 
