@@ -35,3 +35,21 @@ npm install
 npm run dev
 
 ```
+
+---
+
+## Database API
+
+[Here](https://github.com/g-spoiler-alert/spoiler-alert-be)
+
+---
+
+## Credits
+
+This app was a group project, combining the efforts and expertise of [Tim Hurley](https://github.com/yhtomitim), [Keith Jones](https://github.com/joneskc), [Kaitlin Ramirez](https://github.com/kaitlinramirez), [JR Rockenmacher](https://github.com/JRockenmacher) and [Garth Stevens](https://github.com/GarthStevens5).
+
+---
+
+## License
+
+MIT © G-Spoiler Alert!
